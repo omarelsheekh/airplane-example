@@ -4,10 +4,5 @@ services:
     web:
         build: .
         command: python manage.py runserver 0.0.0.0:3000
-        volumes:
-            - airline:/db.sqlite3
         ports:
             - "3000:3000"
-
-volumes: 
-    airline:
